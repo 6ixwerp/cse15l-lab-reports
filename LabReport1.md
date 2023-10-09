@@ -1,3 +1,4 @@
+For my first use of ls which contained no arguments, the working directory would be ~ of /home. The reason I had gotten this output is because 
 ![Image](ls1.png)
 ![Image](ls2.png)
 ![Image](ls3.png)
