@@ -2,11 +2,11 @@ For my first use of ls which contained no arguments, the working directory would
 ![Image](ls1.png)
 FOr my second use of ls which was used with a path to a directory as an argument, the working directory would still be /home. The reason I got this output is because it printed the contents of the current directory list inside of the lecture1 directory. This output is as expected. 
 ![Image](ls2.png)
-For my third use of ls which was used with a path to a file as an argument, 
-![Image](ls3.png)
+For my third use of ls which was used with a path to a file as an argument, the working directory would now be /home/lecture1. This makes sense because 
+
 ![Image](cd1.png)
 ![Image](cd2.png)
-
+![Image](cd3.png)
 ![Image](cat1.png)
 ![Image](cat2.png)
 ![Image](cat3.png)
