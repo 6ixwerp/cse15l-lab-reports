@@ -1,3 +1,3 @@
 # cse15l-lab-reports
 
-First lab woooooo
+Containing all the lab reports posted throughout the quarter of CSE15L
