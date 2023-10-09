@@ -9,6 +9,8 @@ For my second use of ls which was used with a path to a directory as an argument
 For my third use of ls which was used with a path to a file as an argument, the working directory would now be /home/lecture1. For my output I had received an error as there was no file in the directory. This makes sense as I had first printed the contents inside of lecture1, then I had printed the list of contents inside of the messages folder. When I tried to list the contents of the en-us.txt file though, it would come out as an error as there would be no files inside of the en-us.txt file. This output was an expected error output. 
 
 ![Image](ls3.5.png)
+
+For my first use of cd which contained no arguments, the working directory would be /home. For my output, cd is supposed to output whatever the current directory is instead of changing the directory like it is supposed to do. 
 ![Image](cd1.png)
 ![Image](cd2.png)
 ![Image](cd3.png)
