@@ -1,3 +1,6 @@
+# Lab Report 1
+
+
 For my first use of ls which contained no arguments, the working directory would be ~ or /home. The reason I had gotten this output is because ls calls for a list of the current directory contents. Since there are no arguments, this means all shell arguments are printed so it will print out just the lecture1 directory instead of providing a current directory. This output is expected. 
 
 ![Image](ls1.png)
