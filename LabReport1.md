@@ -10,10 +10,19 @@ For my third use of ls which was used with a path to a file as an argument, the 
 
 ![Image](ls3.5.png)
 
-For my first use of cd which contained no arguments, the working directory would be /home. For my output, cd is supposed to output whatever the current directory is instead of changing the directory like it is supposed to do. 
+For my first use of cd which contained no arguments, the working directory would be /home. For my output, cd outputted whatever the current directory is instead of changing the directory like it is supposed to do. This is because it has no arguments so there is no directory to change to. This output is as expected. 
+
 ![Image](cd1.png)
+
+For my second use of cd which was used with a path to a directory as an argument, the working directory would be under /home/lecture1. For my output, cd changed the directory of the home directory to the lecture1 folder. If ls is printed then this would list all the contents of the lecture1 folder on the screen. This output is expected. 
+
 ![Image](cd2.png)
+
+For my third use of cd which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages. For my output, cd changed the directory of the lecture1 folder to the messages folder, and then from there changed the directory of the messages folder to the en-us.txt file. This output was expected as en-us.txt is not in the directory since it is a file. Cd is only looking for directories as arguments. 
+
 ![Image](cd3.png)
+
+For my first use of cat which contained no arguments, the working directory 
 ![Image](cat1.png)
 ![Image](cat2.png)
 ![Image](cat3.png)
