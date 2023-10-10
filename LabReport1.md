@@ -22,7 +22,14 @@ For my third use of cd which was used with a path to a file as an argument, the 
 
 ![Image](cd3.png)
 
-For my first use of cat which contained no arguments, the working directory 
+For my first use of cat which contained no arguments, the working directory is /home. For my output, cat outputs the contents of any file and since there are no files inside of the home directory, it will just print out whatever is typed into the terminal. This output was expected as there are no files in the directory. 
+
 ![Image](cat1.png)
+
+For my second use of cat which was used with a path to a directory as an argument, the working directory would be under /home. It would also produce an error and this is because the question is calling for a path to a directory, but cat only prints the contents of a file. This output is expected as it cannot work on a directory. 
+
 ![Image](cat2.png)
+
+For my third use of cat which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages/en-us.txt. It would produce the file contents within the en-us.txt file which is 'Hello World!', this is because the cat can only print the contents of a file. This output was expected. 
+
 ![Image](cat3.png)
