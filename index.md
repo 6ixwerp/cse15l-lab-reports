@@ -1,1 +1,1 @@
-[Lab Report 1](https://github.com/6ixwerp/cse15l-lab-reports/blob/main/LabReport1.md)
+[Lab Report 1](https://6ixwerp.github.io/cse15l-lab-reports/LabReport1.html)
