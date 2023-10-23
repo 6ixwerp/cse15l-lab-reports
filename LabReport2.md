@@ -1,4 +1,5 @@
 # Lab Report 2
+This is the code for the StringServer web server... 
 
 
 PART 2:
