@@ -1,11 +1,11 @@
 # Lab Report 1
 
 
-For my first use of ls which contained no arguments, the working directory would be ~ or /home. The reason I had gotten this output is because ls calls for a list of the current directory contents. Since there are no arguments, this means all shell arguments are printed so it will print out just the lecture1 directory instead of providing a current directory. This output is expected. 
+For my first use of ls which contained no arguments, lecture1 was the only item in the /home directory so it was only printed out. The working directory would be /home. The reason I had gotten this output is because ls calls for a list of the current directory contents. Since there are no arguments, this means all shell arguments are printed so it will print out just the lecture1 directory instead of providing a current directory. This output is expected. 
 
 ![Image](ls1.png)
 
-For my second use of ls which was used with a path to a directory as an argument, the working directory would still be /home. The reason I got this output is because it printed the contents of the current directory list inside of the lecture1 directory. This output is as expected. 
+For my second use of ls which was used with a path to a directory as an argument, the working directory would still be /home. The reason I got this output is because the argument was lecture1, so the program printed out the lecture1 contents. This output is as expected. 
 
 ![Image](ls2.png)
 
@@ -13,7 +13,7 @@ For my third use of ls which was used with a path to a file as an argument, the 
 
 ![Image](ls3.5.png)
 
-For my first use of cd which contained no arguments, the working directory would be /home. For my output, cd outputted whatever the current directory is instead of changing the directory like it is supposed to do. This is because it has no arguments so there is no directory to change to. This output is as expected. 
+For my first use of cd which contained no arguments, the working directory was switched to /home. Due to there being no argument, the working directory was changed to /home, despite the working directory already being at /home. If the workign directory had been something like /home/lecture1/messages then the working directory have been changed back to /home if no arguments had been given. This output and directory change is as expected as there was no error. 
 
 ![Image](cd1.png)
 
@@ -21,11 +21,11 @@ For my second use of cd which was used with a path to a directory as an argument
 
 ![Image](cd2.png)
 
-For my third use of cd which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages. For my output, cd changed the directory of the lecture1 folder to the messages folder, and then from there changed the directory of the messages folder to the en-us.txt file. This output was expected as en-us.txt is not in the directory since it is a file. Cd is only looking for directories as arguments. 
+For my third use of cd which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages. There was a notice printed out that "en-us.txt" was not a directory, so the directory wouldn't be able to change to that input. This would show an error because nothing had happened, although when the error occurred Ed threw that message. This output was expected as en-us.txt is not in the directory since it is a file. Cd is only looking for directories as arguments. 
 
 ![Image](cd3.png)
 
-For my first use of cat which contained no arguments, the working directory is /home. For my output, cat outputs the contents of any file and since there are no files inside of the home directory, it will just print out whatever is typed into the terminal. This output was expected as there are no files in the directory. 
+For my first use of cat which contained no arguments, the working directory is /home. For my output, cat displays the contents of any file and since there was no argument given, nothing will be printed out. The terminal is waiting for an input, but since no error message is thrown, so this would not be an error.
 
 ![Image](cat1.png)
 
@@ -33,6 +33,6 @@ For my second use of cat which was used with a path to a directory as an argumen
 
 ![Image](cat2.png)
 
-For my third use of cat which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages/en-us.txt. It would produce the file contents within the en-us.txt file which is 'Hello World!', this is because the cat can only print the contents of a file. This output was expected. 
+For my third use of cat which was used with a path to a file as an argument, the working directory would be under /home/lecture1/messages. It would produce the contents within the "en-us.txt" file which is 'Hello World!', this is because cat can only print the contents of a file. There was no error. 
 
 ![Image](cat3.png)
