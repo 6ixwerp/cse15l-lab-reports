@@ -70,3 +70,7 @@ Before:
     }
     
 This fix would have solved the issue that the previous program contained because I created a new array to store the values of the reversed integers. This was to ensure that the 'arr' variable wouldn't be modified and the new array can be placed in the 'newArray'. 
+
+**PART 3:**
+
+I had learned alot from these past 2 weeks of lab, but I think the one thing that really stood out to me was being able to create the web server. It was interesting being able to develop and test a URL and to be able to tweak it to output certain things on the screen. This could range from incrementing a number to displaying text. 
