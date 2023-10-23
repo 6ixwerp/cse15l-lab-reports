@@ -1,6 +1,6 @@
 # Lab Report 2
 This is the code for the StringServer web server... 
-
+![Image](StringServerCode.png)
 
 PART 2:
 The bug I had chosen from the list given to me was under the Array examples where I needed to successfully reverse an array with all the elements in that order. 
