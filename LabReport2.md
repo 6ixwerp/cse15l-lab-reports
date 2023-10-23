@@ -12,10 +12,10 @@ PART 2:
 The bug I had chosen from the list given to me was under the Array examples where I needed to successfully reverse an array with all the elements in that order. 
 My first step was to create a failure inducing input for the buggy program, as a JUnit test. 
 # code block
-import static org.junit.Assert.assertArrayEquals;
-import org.junit.Test;
+    import static org.junit.Assert.assertArrayEquals;
+    import org.junit.Test;
 
-public class reverseFail {
+    public class reverseFail {
 
     @Test
     public void testReverseFail() {
@@ -27,10 +27,10 @@ public class reverseFail {
 }
 My second step was to create a JUnit test that doesn't induce a failing output. 
 # code block
-import static org.junit.Assert.assertArrayEquals;
-import org.junit.Test;
+    import static org.junit.Assert.assertArrayEquals;
+    import org.junit.Test;
 
-public class reversePass {
+    public class reversePass {
 
     @Test
     public void testReversePass() {
@@ -44,15 +44,17 @@ public class reversePass {
 
 
 The before and after code for this bug would look like this...
+
 Before:
-# code block
- static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
-  }
+# code block 
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+          arr[i] = newArray[arr.length - i - 1];
+        }
+        return arr;
+      }
+  
   After:
   # code block 
     static int[] reversed(int[] arr) {
@@ -62,4 +64,5 @@ Before:
         }
         return newArray;
     }
+    
 This fix would have solved the issue that the previous program contained because I created a new array to store the values of the reversed integers. This was to ensure that the 'arr' variable wouldn't be modified and the new array can be placed in the 'newArray'. 
