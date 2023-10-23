@@ -2,6 +2,12 @@
 This is the code for the StringServer web server... 
 ![Image](StringServerCode.png)
 
+Here are screenshots of two instances where I had used the /add-message...
+![Image](HelloSearchBar.png)
+![Image](HowAreYouSearchBar.png)
+
+
+
 PART 2:
 The bug I had chosen from the list given to me was under the Array examples where I needed to successfully reverse an array with all the elements in that order. 
 My first step was to create a failure inducing input for the buggy program, as a JUnit test. 
@@ -39,6 +45,7 @@ public class reversePass {
 
 The before and after code for this bug would look like this...
 Before:
+# code block
  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -47,6 +54,7 @@ Before:
     return arr;
   }
   After:
+  # code block 
     static int[] reversed(int[] arr) {
         int[] newArray = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
