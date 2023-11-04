@@ -1,4 +1,5 @@
 **PART 1**
+
 The bug I had chosen from the list given to me was under the Array examples where I needed to successfully reverse an array with all the elements in that order. 
 My first step was to create a failure inducing input for the buggy program, as a JUnit test. 
 
@@ -57,3 +58,7 @@ Before:
     }
     
 This fix would have solved the issue that the previous program contained because I created a new array to store the values of the reversed integers. This was to ensure that the 'arr' variable wouldn't be modified and the new array can be placed in the 'newArray'. 
+
+**PART 2**
+
+
