@@ -12,10 +12,14 @@ For my code, the method that was called was the String handleRequest(URI url) wh
 
 **PART 2:**
 
-Here is the path to my private key on my home computer. The private key is stored in *id_rsa* 
+Here is the path to my private key on my home computer, the private key is stored in *id_rsa*:
 ![Image](privkeyieng6.png)
 
+Here is the path to my public key on *ieng6*:
+![Image](pubkeyieng6.png)
 
+Here is a screenshot of logging into *ieng6* without a password: 
+![Image](ieng6loginnopw.png)
 
 **PART 3:**
 
