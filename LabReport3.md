@@ -83,7 +83,10 @@ Output:
     biologists. For geneticists and cell biologists who study meiosis, the existence of
         For population geneticists, much of the interest in recombination hotspots comes from
 #
+
 For my *-i* command, I was searching the texts files listed above for specific words like "resuscitated" and "geneticists". This can be useful when you are trying to retrieve relevant information effectively and eliminates the need to know the exact capitilization in the target text.
+
+
 
 Using *-v*:
 Input:
@@ -134,6 +137,10 @@ Output:
         tyrosinase-related protein-1 (TYRP-1) was markedly
         overexpressed in the nonmetastatic NM-2C5 cell line [ 2 5 ]
 # 
+
+For my *v* command, I was searching the files for sentences that didn't contain the specific words "the" and "and". Notice how for one of my examples I had combined -v with -i and this is because if I had just used -v to search and output any sentences not containing "the" then it would still output sentences containing "The" because -v is case-sensitive, but combining with -i would eliminate all cases of "The" whether upper or lowercase because -i is not case-sensitive. This command is useful if you want to focus on the information that doesn't contain specific content.
+
+
 Using *n*:
 Input: 
 
