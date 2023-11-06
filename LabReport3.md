@@ -132,3 +132,85 @@ Output:
         increased in the metastatic M-4A4 cell line. Conversely,
         tyrosinase-related protein-1 (TYRP-1) was markedly
         overexpressed in the nonmetastatic NM-2C5 cell line [ 2 5 ]
+# 
+Using *n*:
+Input: 
+
+    grep -n "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
+#
+Output:
+
+    26:        cardiac events is much greater in patients with unstable
+    44:        cardiac death or emergent rehospitalization for worsening
+    59:        myocardial infarction and resuscitated sudden cardiac death
+    122:        resuscitated sudden cardiac death, worsening heart failure,
+#
+Input:
+
+    grep -n "World Trade Center" /Users/ethanheath/docsearch/technical/911report/chapter-9.txt
+#
+Output:
+
+    8:                World Trade Center rested not with national policymakers but with private firms and
+    12:            The World Trade Center.
+    14:            The World Trade Center (WTC) complex was built for the Port Authority of New York and
+    50:                of America, New York City and specifically the World Trade Center had been the
+    54:                and exposed vulnerabilities in the World Trade Center's and the city's emergency
+    135:                Authority's nine facilities, including the World Trade Center.
+    236:                overall response to an The World Trade Center Radio Repeater System Rendering by
+    264:                    1 World Trade Center (the North Tower) at 8:46 until the South Tower was hit
+    266:                    2 World Trade Center (the South Tower) at 9:03 until the collapse of the South
+    538:                airplane crash at the World Trade Center. The air traffic controllers had been
+    572:                vicinity of the World Trade Center and evacuating civilians from those
+    601:                civilians in the World Trade Center complex, because of the magnitude of the
+    1482:                World Trade Center that same morning included catastrophic damage 1,000 feet above
+    1625:                experience of the civilians at the World Trade Center on 9/11.
+    1689:                disaster strike. Clearly, many building occupants in the World Trade Center did not
+    1729:                World Trade Center attacks, the FDNY as an institution proved incapable of
+#
+Using *-o*:
+Input:
+
+    grep -n -o "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
+#
+Output:
+
+    26:cardiac
+    44:cardiac
+    59:cardiac
+    122:cardiac
+#
+Input:
+
+    grep -o "Flight 11" /Users/ethanheath/docsearch/technical/911report/chapter-13.2.txt 
+#
+Output:
+
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+    Flight 11
+#
+    
