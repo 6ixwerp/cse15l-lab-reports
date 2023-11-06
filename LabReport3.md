@@ -65,5 +65,13 @@ I decided to use the *grep* command and four interesting command-line options I 
 
 Using *-i*:
 # 
+Input:
+
     grep -i "resuscitated" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt 
+#
+Output:
+
+    death, non-fatal myocardial infarction, resuscitated sudden
+        myocardial infarction and resuscitated sudden cardiac death
+        resuscitated sudden cardiac death, worsening heart failure,
     
