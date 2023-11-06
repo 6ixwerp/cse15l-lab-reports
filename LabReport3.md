@@ -142,6 +142,7 @@ For my *v* command, I was searching the files for sentences that didn't contain 
 
 
 Using *n*:
+
 Input: 
 
     grep -n "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
@@ -177,6 +178,7 @@ Output:
     1729:                World Trade Center attacks, the FDNY as an institution proved incapable of
 #
 Using *-o*:
+
 Input:
 
     grep -n -o "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
