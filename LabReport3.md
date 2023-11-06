@@ -83,6 +83,7 @@ Output:
     biologists. For geneticists and cell biologists who study meiosis, the existence of
         For population geneticists, much of the interest in recombination hotspots comes from
 #
+For my *-i* command, I was searching the texts files listed above for specific words like "resuscitated" and "geneticists". This can be useful when you are trying to retrieve relevant information effectively and eliminates the need to know the exact capitilization in the target text.
 
 Using *-v*:
 Input:
