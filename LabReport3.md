@@ -61,9 +61,9 @@ This fix would have solved the issue that the previous program contained because
 
 **PART 2**
 
-I decided to use the *grep* command and four interesting command-line options I chose were the *-i* which would tell grep to perform a case-sensitive search, so it would match the text regardless of if it was uppercase or lowercase. Another command-line option was the *-v* which would tell grep to invert the match, displaying lines that do not contain the specified pattern. There also is the option of using *-n* display the matched lines and their line numbers. Lastly, another command-line that can be used with *grep* would be the *-o* which prints only the matched parts of a matching line, with each such output on a separate output line. 
+I decided to use the 'grep' command and four interesting command-line options I chose were the '-i' which would tell grep to perform a case-sensitive search, so it would match the text regardless of if it was uppercase or lowercase. Another command-line option was the '-v' which would tell grep to invert the match, displaying lines that do not contain the specified pattern. There also is the option of using '-n' display the matched lines and their line numbers. Lastly, another command-line that can be used with 'grep' would be the '-o' which prints only the matched parts of a matching line, with each such output on a separate output line. I found these options by using 'man find' command in terminal. 
 
-Using *-i*:
+Using '-i':
 
 Input:
 
