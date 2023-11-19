@@ -6,7 +6,7 @@ My first step was to create a failure inducing input for the buggy program, as a
     import static org.junit.Assert.assertArrayEquals;
     import org.junit.Test;
 
-    public class reverseFail {
+    public class reversedTest {
 
     @Test
     public void testReverseFail() {
@@ -22,7 +22,7 @@ My second step was to create a JUnit test that doesn't induce a failing output.
     import static org.junit.Assert.assertArrayEquals;
     import org.junit.Test;
 
-    public class reversePass {
+    public class reversedPass {
 
     @Test
     public void testReversePass() {
@@ -61,43 +61,41 @@ This fix would have solved the issue that the previous program contained because
 
 **PART 2**
 
-I decided to use the `grep` command and four interesting command-line options I chose were the `-i` which would tell grep to perform a case-sensitive search, so it would match the text regardless of if it was uppercase or lowercase. Another command-line option was the `-v` which would tell grep to invert the match, displaying lines that do not contain the specified pattern. There also is the option of using `-n` display the matched lines and their line numbers. Lastly, another command-line that can be used with `grep` would be the `-o` which prints only the matched parts of a matching line, with each such output on a separate output line. I found these options by using 'man find' command in terminal. 
+**Command of choice: `grep`**
 
-Using `-i`:
+* Options of choice: `-i`, `-v`, `-n` and `-o`. I found these options by using the `man find` command in the terminal.
+* For the following examples, the working directory is `/Users/ethanheath/docsearch/technical`
 
-Input:
-
-    grep -i "resuscitated" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt 
 #
-Output:
+**`-i` option:** 
 
-    death, non-fatal myocardial infarction, resuscitated sudden
+* `grep -i "string" "*/filename>` tells grep to perform a case-sensitive search for the string.
+
+      grep -i "resuscitated" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt 
+
+        death, non-fatal myocardial infarction, resuscitated sudden
         myocardial infarction and resuscitated sudden cardiac death
         resuscitated sudden cardiac death, worsening heart failure,
 #
-Input: 
+* `grep -i -w "string" "*/<filename>` tells grep to perform a case-sensitive search for the string and match the whole word. 
 
-    grep -i "geneticists" /Users/ethanheath/docsearch/technical/plos/journal.pbio.0020190.txt
-#
-Output:
+         grep -i -w "geneticists" /Users/ethanheath/docsearch/technical/plos/journal.pbio.0020190.txt
 
-    biologists. For geneticists and cell biologists who study meiosis, the existence of
+        biologists. For geneticists and cell biologists who study meiosis, the existence of
         For population geneticists, much of the interest in recombination hotspots comes from
-#
 
 For my `-i` command, I was searching the texts files listed above for specific words like "resuscitated" and "geneticists". This can be useful when you are trying to retrieve relevant information effectively and eliminates the need to know the exact capitilization in the target text.
-
-
-
-Using `-v`:
-
-Input:
-
-    grep -v -i "the" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
 #
-Output:
 
-    Three published [ 1 2 3 ] and one recently presented [ 4
+
+#
+**`-v` option:**
+
+* `grep -v -i "string" "*/<filename>"` tell grep to invert the match, displaying lines that do not contain the specified pattern along with performing a case sensitive search.
+  
+        grep -v -i "the" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
+
+        Three published [ 1 2 3 ] and one recently presented [ 4
         ] randomized placebo-controlled clinical trial have
         unequivocally demonstrated that 3-Hydroxy-3-methylgluatryl
         coenzyme A (HMG CoA) reductase inhibitors (statins) reduce
@@ -113,13 +111,12 @@ Output:
         Ischemia Reduction with Aggressive Cholesterol Lowering
         (MIRACL) trial set out to answer this question.
 #
-Input:
-
-    grep -v -i "and" /Users/ethanheath/docsearch/technical/biomed/bcr620.txt
 #
-Output:
+* `grep -v "string" "*/<filename>"` tells grep to invert match, displaying lines that do not contain a specified pattern.
 
-    Introduction
+      grep -v "and" /Users/ethanheath/docsearch/technical/biomed/bcr620.txt
+
+      Introduction
         Breast cancer is a major cause of death among women in
         localized, many patients will succumb to the disease if the
         primary tumor metastasizes to secondary organs. Although
@@ -138,29 +135,24 @@ Output:
         increased in the metastatic M-4A4 cell line. Conversely,
         tyrosinase-related protein-1 (TYRP-1) was markedly
         overexpressed in the nonmetastatic NM-2C5 cell line [ 2 5 ]
-# 
 
 For my *v* command, I was searching the files for sentences that didn't contain the specific words "the" and "and". Notice how for one of my examples I had combined -v with -i and this is because if I had just used -v to search and output any sentences not containing "the" then it would still output sentences containing "The" because -v is case-sensitive, but combining with -i would eliminate all cases of "The" whether upper or lowercase because -i is not case-sensitive. This command is useful if you want to focus on the information that doesn't contain specific content.
-
-
-Using *n*:
-
-Input: 
-
-    grep -n "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
 #
-Output:
+#
+**`-n` option:**
+
+*`grep -n -i "string" "*/<filename>"` display the matched lines and their line numbers along with a case sensitive search.
+
+    grep -n -i "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
 
     26:        cardiac events is much greater in patients with unstable
     44:        cardiac death or emergent rehospitalization for worsening
     59:        myocardial infarction and resuscitated sudden cardiac death
     122:        resuscitated sudden cardiac death, worsening heart failure,
-#
-Input:
+#    
+*`grep -n "string" "*/<filename>"` displays the matched lines and their line numbers. 
 
     grep -n "World Trade Center" /Users/ethanheath/docsearch/technical/911report/chapter-9.txt
-#
-Output:
 
     8:                World Trade Center rested not with national policymakers but with private firms and
     12:            The World Trade Center.
@@ -179,24 +171,20 @@ Output:
     1689:                disaster strike. Clearly, many building occupants in the World Trade Center did not
     1729:                World Trade Center attacks, the FDNY as an institution proved incapable of
 #
-Using *-o*:
+**`-o` option:**
 
-Input:
+*`grep -n -o "string" "*/<filename>"` prints only the matched parts of a matching line, with each such output on a separate output line along with the line numbers.
 
     grep -n -o "cardiac" /Users/ethanheath/docsearch/technical/biomed/1468-6708-3-3.txt
-#
-Output:
 
     26:cardiac
     44:cardiac
     59:cardiac
     122:cardiac
 #
-Input:
-
+*`grep -o "string" "*/<filename>*` prints only the matched parts of the matching line. 
+    
     grep -o "Flight 11" /Users/ethanheath/docsearch/technical/911report/chapter-13.2.txt 
-#
-Output:
 
     Flight 11
     Flight 11
@@ -224,5 +212,4 @@ Output:
     Flight 11
     Flight 11
     Flight 11
-#
     
