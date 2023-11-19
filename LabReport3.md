@@ -33,7 +33,7 @@ My second step was to create a JUnit test that doesn't induce a failing output.
     }
 }
 
-![Image](JUnitOutputFail.jpeg)
+![Image](JunitOutputFail.jpeg)
 
 The before and after code for this bug would look like this...
 
