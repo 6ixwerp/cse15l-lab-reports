@@ -12,12 +12,11 @@ Now we are going to run the JUnit tests, in order to do this we are going to typ
 
 **Step 4: Editing the java code**
 Since it showed that the JUnit tests failed we need to edit the code in order to make it run successfully. Look for the bug and edit it accordingly. You will need to type `nano` *ListExamples.java* and you should see this in the terminal: ![Image](gitNano.png)
-then in order to look for the bug you will need to press `Ctrl + W index2` to jump to the bug on line 44: ![Image](
-
-Then edit the code and press `Ctrl + O` to save and `Ctrl + X` <enter> to exit. 
+then in order to look for the bug you will need to press `Ctrl + W index2` to jump to the bug on line 44: ![Image](gitCodeChange.png)
+then edit the code and press `Ctrl + O` to save and `Ctrl + X` <enter> to exit. 
 
 **Step 5: Run the JUnit tests with fix**
-You can run the Junit tests using the terminal history by pressing <up> on your key pad until you reach the commands used for initially running the bash script:
+You can run the Junit tests using the terminal history by pressing <up> on your key pad until you reach the commands used for initially running the bash script: ![Image](gitResult.png)
 
 **Step 6: Commit and push to Github**
 Now you can push the resulting change into your Github account by typing `git add ListExamples.java` <enter>, then typing `git command -m "string"` <enter>, and finally type `git push` <enter> and this would commit and push all edits successfully into your Github!
