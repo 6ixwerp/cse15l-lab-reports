@@ -1,6 +1,8 @@
 **Step 1: Sign into ieng6**
 I logged into my ieng6 account and typed `ssh cs15lfa23zz@ieng6.ucsd.edu` <enter> which then logged me into the remote server.
 
+![Image](githubrepolab7.png)
+
 **Step 2: Fork and clone repository**
 In order to fork and clone the repository on GitHub you would need to follow this link
 
