@@ -1,16 +1,12 @@
 **Step 1: Sign into ieng6**
 I logged into my ieng6 account and typed `ssh cs15lfa23zz@ieng6.ucsd.edu` <enter> which then logged me into the remote server.
 
-![Image](githubrepolab7.png)
+![Image](githubRepoLab7.png)
 
 **Step 2: Fork and clone repository**
-In order to fork and clone the repository on GitHub you would need to follow this link
-
-and then select the `Fork` button that looks like this:
-
-press it, and to clone this repository you need to press the code button and then go to https:
-
-copy the code that was given to you and paste it into your github terminal. I went to my terminal and typed `git clone https://github.com/6ixwerp/lab7.git` then pressed <enter> and it will look like this:
+In order to fork and clone the repository on GitHub you would need to follow this [Link](https://github.com/ucsd-cse15l-w23/lab7) and then select the `Fork` button that looks like this: ![Image](gitForkButton.png)
+press it, and to clone this repository you need to press the code button and then go to SSH: ![Image](gitSSH.png)
+copy the code that was given to you and paste it into your github terminal. I went to my terminal and typed `git clone git@github.com:6ixwerp/lab7.git` then pressed <enter> and it will look like this: ![Image](gitCloneResult.png)
 
 **Step 3: Running the JUnit tests**
 Now we are going to run the JUnit tests, in order to do this we are going to type `ls` and then `cd lab7`. Now we are going to type `bash test.sh`, which will tell you if you had passed the tests or not, in this case we should not: 
