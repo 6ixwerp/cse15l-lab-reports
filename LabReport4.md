@@ -1,7 +1,7 @@
 **Step 1: Sign into ieng6**
 
 I logged into my ieng6 account and typed `ssh cs15lfa23zz@ieng6.ucsd.edu` `<enter>` which then logged me into the remote server.
-![Image](ieng6loginnopw.png)//(https://raw.githubusercontent.com/6ixwerp/cse15l-lab-reports/main/ieng6loginnopw.png)
+![Image](ieng6loginnopw.png)
 
 **Step 2: Fork and clone repository**
 
