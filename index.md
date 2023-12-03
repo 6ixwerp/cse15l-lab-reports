@@ -4,4 +4,4 @@
 
 [Lab Report 3](https://6ixwerp.github.io/cse15l-lab-reports/LabReport3.html)
 
-
+[Lab Report 4](https://6ixwerp.github.io/cse15l-lab-reports/LabReport4.html)
