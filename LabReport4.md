@@ -25,5 +25,5 @@ You can run the Junit tests using the terminal history by pressing `<up>` on you
 
 **Step 6: Commit and push to Github**
 
-Now you can push the resulting change into your Github account by typing `git add ListExamples.java` <enter>, then typing `git command -m "string"` `<enter>`, and finally type `git push` `<enter>` and this would commit and push all edits successfully into your Github!
+Now you can push the resulting change into your Github account by typing `git add ListExamples.java` `<enter>`, then typing `git command -m "string"` `<enter>`, and finally type `git push` `<enter>` and this would commit and push all edits successfully into your Github!
 
