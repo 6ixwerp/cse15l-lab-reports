@@ -7,6 +7,9 @@ Here's a snippet of my Java code:
 ![Image](badCode1.png)
 ![Image](badCode2.png)
 
+I also will attach my `ListExamplesTests.java` class just in case:
+
+
 
 TA: Hello, you are on the right track seeing that your `add(0, s)` is causing you problems. However, that isn't the only thing that is causing problems in your `ListExamples.java` class. Check your `merge` method, is there anything that can be the potential cause for an out of bounds error?
 
