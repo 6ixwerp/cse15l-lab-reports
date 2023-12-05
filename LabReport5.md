@@ -16,14 +16,16 @@ Student: Ok! I think I know what you are implying, I fixed the code and it appea
 ![Image](passOutput.png)
 
 **File/Directory Structure**
-`-lab7
+```
+-lab7
  -.gitignore
  -lib
   -hamcrest-core-1.3.jar
   -junit-4.13.2.jar
  -ListExamples.java
  -ListExamplesTests.java
- -test.sh`
+ -test.sh
+```
 
  The command line I had used to trigger the bug and run the passed test was `bash test.sh`, and the before and after code was posted earlier in the lab. In order to fix the code I had replaced the `index1` with an `index2` in the `merge` method as well as replaced the `result.add(0, s)` with `result.add(s)` in the `filter` method. 
 
